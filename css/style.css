@@ -1,0 +1,985 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/323039/black-wood-small.jpg");
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.container {
+  margin: auto;
+  text-align: center;
+}
+
+/*Paginas*/
+/* Productos */
+.h1-productos {
+  text-align: center;
+  margin: 30px 0 20px 0;
+  font-family: "Playfair Display", serif;
+  padding-top: 60px;
+}
+
+.body-productos {
+  max-width: 100%;
+  width: 87%;
+  margin: auto;
+  text-align: center;
+}
+
+.productos {
+  border: solid black 4px;
+  border-radius: 25px;
+  background-color: white;
+  color: black;
+  max-width: 100%;
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  margin-bottom: 40px;
+  padding: 22px 25px;
+}
+
+.cont-productos {
+  border: solid rgb(43, 43, 43) 4px;
+  border-radius: 30px;
+}
+
+.productos img {
+  border-radius: 25px;
+  max-width: 100%;
+  width: 100%;
+}
+
+.productos h3 {
+  margin-bottom: 4px;
+  font-size: 16px;
+  font-family: "Bona Nova", serif;
+  font-weight: bold;
+}
+
+.productos p {
+  font-weight: bold;
+  font-size: 17px;
+  margin-top: 3px;
+}
+
+.productos button {
+  font-family: "Bona Nova", serif;
+  font-size: 17px;
+  display: block;
+  margin: 7px auto 8px auto;
+  padding: 9px 12px;
+  background-color: black;
+  color: white;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+}
+
+.productos button:hover {
+  background-color: #171616;
+  transform: translate(7px, 0);
+}
+
+/* Vinos */
+.h1-vinos {
+  text-align: center;
+  margin: 30px 0 20px 0;
+  font-family: "Playfair Display", serif;
+  padding-top: 60px;
+}
+
+.body-vinos {
+  max-width: 100%;
+  width: 87%;
+  margin: auto;
+  text-align: center;
+}
+
+.vinos {
+  border: solid black 4px;
+  border-radius: 25px;
+  background-color: white;
+  color: black;
+  max-width: 100%;
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  margin-bottom: 40px;
+  padding: 22px 25px;
+}
+
+.cont-vinos {
+  border: solid rgb(43, 43, 43) 4px;
+  border-radius: 30px;
+}
+
+.vinos img {
+  border-radius: 25px;
+  max-width: 100%;
+  width: 100%;
+}
+
+.vinos h3 {
+  margin-bottom: 4px;
+  font-size: 16px;
+  font-family: "Bona Nova", serif;
+  font-weight: bold;
+}
+
+.vinos p {
+  font-weight: bold;
+  font-size: 17px;
+  margin-top: 3px;
+}
+
+.vinos button {
+  font-family: "Bona Nova", serif;
+  font-size: 17px;
+  display: block;
+  margin: 7px auto 8px auto;
+  padding: 9px 12px;
+  background-color: black;
+  color: white;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+}
+
+.vinos button:hover {
+  background-color: #171616;
+  transform: translate(7px, 0);
+}
+
+/* Espumantes */
+.h1-espumantes {
+  text-align: center;
+  margin: 30px 0 20px 0;
+  font-family: "Playfair Display", serif;
+  padding-top: 60px;
+}
+
+.body-espumantes {
+  max-width: 100%;
+  width: 87%;
+  margin: auto;
+  text-align: center;
+}
+
+.espumantes {
+  border: solid black 4px;
+  border-radius: 25px;
+  background-color: white;
+  color: black;
+  max-width: 100%;
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  margin-bottom: 40px;
+  padding: 22px 25px;
+}
+
+.cont-espumantes {
+  border: solid rgb(43, 43, 43) 4px;
+  border-radius: 30px;
+}
+
+.espumantes img {
+  border-radius: 25px;
+  max-width: 100%;
+  width: 100%;
+}
+
+.espumantes h3 {
+  margin-bottom: 4px;
+  font-size: 16px;
+  font-family: "Bona Nova", serif;
+  font-weight: bold;
+}
+
+.espumantes p {
+  font-weight: bold;
+  font-size: 17px;
+  margin-top: 3px;
+}
+
+.espumantes button {
+  font-family: "Bona Nova", serif;
+  font-size: 17px;
+  display: block;
+  margin: 7px auto 8px auto;
+  padding: 9px 12px;
+  background-color: black;
+  color: white;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+}
+
+.espumantes button:hover {
+  background-color: #171616;
+  transform: translate(7px, 0);
+}
+
+/* aceites */
+.h1-aceites {
+  text-align: center;
+  margin: 30px 0 20px 0;
+  font-family: "Playfair Display", serif;
+  padding-top: 60px;
+}
+
+.body-aceites {
+  max-width: 100%;
+  width: 87%;
+  margin: auto;
+  text-align: center;
+}
+
+.aceites {
+  border: solid black 4px;
+  border-radius: 25px;
+  background-color: white;
+  color: black;
+  max-width: 100%;
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  margin-bottom: 40px;
+  padding: 22px 25px;
+}
+
+.cont-aceites {
+  border: solid rgb(43, 43, 43) 4px;
+  border-radius: 30px;
+}
+
+.aceites img {
+  border-radius: 25px;
+  max-width: 100%;
+  width: 100%;
+}
+
+.aceites h3 {
+  margin-bottom: 4px;
+  font-size: 16px;
+  font-family: "Bona Nova", serif;
+  font-weight: bold;
+}
+
+.aceites p {
+  font-weight: bold;
+  font-size: 17px;
+  margin-top: 3px;
+}
+
+.aceites button {
+  font-family: "Bona Nova", serif;
+  font-size: 17px;
+  display: block;
+  margin: 7px auto 8px auto;
+  padding: 9px 12px;
+  background-color: black;
+  color: white;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+}
+
+.aceites button:hover {
+  background-color: #171616;
+  transform: translate(7px, 0);
+}
+
+/* whiskys */
+.h1-whiskys {
+  text-align: center;
+  margin: 30px 0 20px 0;
+  font-family: "Playfair Display", serif;
+  padding-top: 60px;
+}
+
+.body-whiskys {
+  max-width: 100%;
+  width: 87%;
+  margin: auto;
+  text-align: center;
+}
+
+.whiskys {
+  border: solid black 4px;
+  border-radius: 25px;
+  background-color: white;
+  color: black;
+  max-width: 100%;
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  margin-bottom: 40px;
+  padding: 22px 25px;
+}
+
+.cont-whiskys {
+  border: solid rgb(43, 43, 43) 4px;
+  border-radius: 30px;
+}
+
+.whiskys img {
+  border-radius: 25px;
+  max-width: 100%;
+  width: 100%;
+}
+
+.whiskys h3 {
+  margin-bottom: 4px;
+  font-size: 16px;
+  font-family: "Bona Nova", serif;
+  font-weight: bold;
+}
+
+.whiskys p {
+  font-weight: bold;
+  font-size: 17px;
+  margin-top: 3px;
+}
+
+.whiskys button {
+  font-family: "Bona Nova", serif;
+  font-size: 17px;
+  display: block;
+  margin: 7px auto 8px auto;
+  padding: 9px 12px;
+  background-color: black;
+  color: white;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+}
+
+.whiskys button:hover {
+  background-color: #171616;
+  transform: translate(7px, 0);
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+  }
+  /*Paginas*/
+  /*Vinos*/
+  .h1-vinos {
+    font-size: 12px;
+    margin: 10px 0 15px 0;
+  }
+  .body-vinos {
+    max-width: 100%;
+    width: 95%;
+  }
+  .vinos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+    width: 100%;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+  }
+  .cont-vinos {
+    border: solid black 4px;
+    border-radius: 15px;
+    background-color: white;
+    padding-bottom: 3px;
+  }
+  .vinos h3 {
+    margin-bottom: 5px;
+    font-size: 13px;
+    font-weight: bold;
+  }
+  .vinos p {
+    font-size: 14px;
+  }
+  .vinos button {
+    padding: 7px 7px;
+    font-size: 13px;
+  }
+  .vinos button:hover {
+    background-color: #171616;
+    transform: translate(5px, 0);
+  }
+  /*Productos*/
+  .h1-productos {
+    font-size: 12px;
+    margin: 10px 0 15px 0;
+  }
+  .body-productos {
+    max-width: 100%;
+    width: 95%;
+  }
+  .productos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+    width: 100%;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+  }
+  .cont-productos {
+    border: solid black 4px;
+    border-radius: 15px;
+    background-color: white;
+    padding-bottom: 3px;
+  }
+  .productos h3 {
+    margin-bottom: 5px;
+    font-size: 13px;
+    font-weight: bold;
+  }
+  .productos p {
+    font-size: 14px;
+  }
+  .productos button {
+    padding: 7px 7px;
+    font-size: 13px;
+  }
+  .prodductos button:hover {
+    background-color: #171616;
+    transform: translate(5px, 0);
+  }
+  /*Espumantes*/
+  .h1-espumantes {
+    font-size: 12px;
+    margin: 10px 0 15px 0;
+  }
+  .body-espumantes {
+    max-width: 100%;
+    width: 95%;
+  }
+  .espumantes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+    width: 100%;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+  }
+  .cont-espumantes {
+    border: solid black 4px;
+    border-radius: 15px;
+    background-color: white;
+    padding-bottom: 3px;
+  }
+  .espumantes h3 {
+    margin-bottom: 5px;
+    font-size: 13px;
+    font-weight: bold;
+  }
+  .espumantes p {
+    font-size: 14px;
+  }
+  .espumantes button {
+    padding: 7px 7px;
+    font-size: 13px;
+  }
+  .espumantes button:hover {
+    background-color: #171616;
+    transform: translate(5px, 0);
+  }
+  /*Aceites*/
+  .h1-aceites {
+    font-size: 12px;
+    margin: 10px 0 15px 0;
+  }
+  .body-aceites {
+    max-width: 100%;
+    width: 95%;
+  }
+  .aceites {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+    width: 100%;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+  }
+  .cont-aceites {
+    border: solid black 4px;
+    border-radius: 15px;
+    background-color: white;
+    padding-bottom: 3px;
+  }
+  .aceites h3 {
+    margin-bottom: 5px;
+    font-size: 13px;
+    font-weight: bold;
+  }
+  .aceites p {
+    font-size: 14px;
+  }
+  .aceites button {
+    padding: 7px 7px;
+    font-size: 13px;
+  }
+  .aceites button:hover {
+    background-color: #171616;
+    transform: translate(5px, 0);
+  }
+  /*Whiskys*/
+  .h1-whiskys {
+    font-size: 12px;
+    margin: 10px 0 15px 0;
+  }
+  .body-whiskys {
+    max-width: 100%;
+    width: 95%;
+  }
+  .whiskys {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+    width: 100%;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+  }
+  .cont-whiskys {
+    border: solid black 4px;
+    border-radius: 15px;
+    background-color: white;
+    padding-bottom: 3px;
+  }
+  .whiskys h3 {
+    margin-bottom: 5px;
+    font-size: 13px;
+    font-weight: bold;
+  }
+  .whiskys p {
+    font-size: 14px;
+  }
+  .whiskys button {
+    padding: 7px 7px;
+    font-size: 13px;
+  }
+  .whiskys button:hover {
+    background-color: #171616;
+    transform: translate(5px, 0);
+  }
+}
+.h1 {
+  padding-left: 25px;
+  font-size: 23px;
+  font-family: "Playfair Display", serif;
+}
+
+ul {
+  list-style: none;
+}
+
+.main-nav {
+  border-bottom: solid rgba(152, 145, 145, 0.487) 1px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+}
+
+.main-nav ul {
+  display: flex;
+  margin-right: 15px;
+}
+
+.main-nav ul li {
+  padding: 0 4px;
+}
+
+.main-nav ul li a {
+  padding: 5px 5px;
+}
+
+.main-nav ul li a:hover {
+  border-bottom: 2px solid white;
+}
+
+.main-nav ul.main-menu {
+  font-family: "Bona Nova", serif;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 768px) {
+  .main-nav h1 {
+    font-size: 10px;
+  }
+  .main-nav {
+    display: flex;
+    height: 50px;
+  }
+  .main-nav ul li a {
+    font-size: 9px;
+    flex-grow: 1;
+  }
+  .main-nav ul li a:hover {
+    border-bottom: 1px solid white;
+  }
+}
+/* Footer Links */
+.links {
+  margin-top: 120px;
+  border-top: solid rgba(152, 145, 145, 0.487) 1px;
+  background: black;
+  color: white;
+  font-size: 16px;
+  padding: 10px 65px 10px 65px;
+}
+
+.links-footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+}
+
+.links li {
+  padding: 5px;
+}
+
+.links li a {
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 768px) {
+  /*Footer*/
+  .links {
+    padding: 2px 2px;
+    text-align: center;
+  }
+  .links-footer {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 5px 0 5px 0;
+  }
+  .links li {
+    margin: 3px 0 3px 0;
+    padding: 1px 0 1px 0;
+  }
+  .links ul li h3 {
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  .links ul li p {
+    font-size: 13px;
+  }
+  .links ul li a {
+    font-size: 13px;
+  }
+}
+/* Header */
+.header {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+  margin: 10px 0 10px 0;
+}
+
+.header button {
+  font-family: "Bona Nova", serif;
+  display: block;
+  border-radius: 12px;
+  border: none;
+  padding: 15px 10px;
+  background: black;
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+  margin-top: 35px;
+}
+
+.header button:hover {
+  background-color: #171616;
+  transform: translate(7px, 0);
+}
+
+/* Promos */
+.h1-promos {
+  font-family: "Playfair Display", serif;
+  margin-bottom: 17px;
+  padding-top: 40px;
+}
+
+.prod-inicio {
+  background-color: white;
+  color: black;
+  border: solid black 4px;
+  border-radius: 15px;
+  max-width: 100%;
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  margin-bottom: 40px;
+  padding: 15px 18px 10px 18px;
+}
+
+.prod-inicio img {
+  border: solid rgb(43, 43, 43) 4px;
+  border-radius: 35px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.prod-inicio h3 {
+  margin-bottom: 4px;
+  font-size: 19px;
+  font-family: "Bona Nova", serif;
+  font-weight: bold;
+}
+
+.prod-inicio p {
+  font-weight: bold;
+}
+
+.prod-inicio button {
+  font-family: "Bona Nova", serif;
+  font-size: 17px;
+  display: block;
+  margin: 15px auto 0px auto;
+  padding: 10px 13px;
+  background-color: black;
+  color: white;
+  border-radius: 9px;
+  border: none;
+  cursor: pointer;
+}
+
+.prod-inicio button:hover {
+  background-color: #171616;
+  transform: translate(7px, 0);
+}
+
+/* Destacados */
+.h1-destacados {
+  padding: 30px 0 10px 0;
+  margin-bottom: 17px;
+  font-family: "Playfair Display", serif;
+}
+
+.destacados {
+  background-color: white;
+  color: black;
+  border: solid black 4px;
+  border-radius: 15px;
+  max-width: 100%;
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  margin-bottom: 40px;
+  padding: 15px 18px 10px 18px;
+}
+
+.destacados img {
+  border: solid rgb(43, 43, 43) 4px;
+  border-radius: 35px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.destacados h3 {
+  margin-bottom: 4px;
+  font-size: 19px;
+  font-family: "Bona Nova", serif;
+  font-weight: bold;
+}
+
+.destacados p {
+  font-weight: bold;
+}
+
+.destacados button {
+  font-family: "Bona Nova", serif;
+  font-size: 17px;
+  display: block;
+  margin: 15px auto 0px auto;
+  padding: 10px 13px;
+  background-color: black;
+  color: white;
+  border-radius: 9px;
+  border: none;
+  cursor: pointer;
+}
+
+.destacados button:hover {
+  background-color: #171616;
+  transform: translate(7px, 0);
+}
+
+@media only screen and (max-width: 768px) {
+  /*Header*/
+  .header {
+    height: auto;
+    padding-bottom: 30px;
+    margin-bottom: 0;
+    max-width: 100%;
+  }
+  .header img {
+    width: 100%;
+    max-width: 100%;
+  }
+  .header button {
+    margin-top: 26px;
+    font-size: 14px;
+  }
+  .header button:hover {
+    background-color: #171616;
+    transform: translate(4px, 0);
+  }
+  /*Promos*/
+  .h1-promos {
+    font-size: 14px;
+    margin: 10px 0 15px 0;
+  }
+  .prod-inicio {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    width: 97%;
+  }
+  .prod-inicio img {
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .prod-inicio h3 {
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .prod-inicio button {
+    margin: 10px auto 0;
+    padding: 8px 8px;
+    font-size: 14px;
+  }
+  .prod-inicio button:hover {
+    background-color: #171616;
+    transform: translate(4px, 0);
+  }
+  /*Destacados*/
+  .h1-destacados {
+    font-size: 14px;
+    margin: 10px 0 15px 0;
+  }
+  .destacados {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    width: 97%;
+  }
+  .destacados img {
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .destacados h3 {
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .destacados button {
+    margin: 10px auto 0;
+    padding: 8px 8px;
+    font-size: 14px;
+  }
+  .destacados button:hover {
+    background-color: #171616;
+    transform: translate(4px, 0);
+  }
+}
+form {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border: 3px solid white;
+  border-radius: 10px;
+  font-family: "Playfair Display", serif;
+}
+
+.form-h1 {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  padding: 100px 0 20px 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type=text],
+input[type=email] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 2px solid white;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+input[type=submit] {
+  background-color: black;
+  color: white;
+  padding: 10px 17px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+  font-size: 19px;
+  font-family: "Playfair Display", serif;
+}
+
+input[type=submit]:hover {
+  background-color: #171616;
+}
+
+@media only screen and (max-width: 768px) {
+  form {
+    width: 100%;
+    max-width: 100%;
+    margin: 40px auto 100px auto;
+    padding: 20px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

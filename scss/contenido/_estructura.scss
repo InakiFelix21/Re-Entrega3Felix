@@ -1,0 +1,347 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/323039/black-wood-small.jpg");
+  color: $blanco;
+}
+
+a {
+  color: $blanco;
+  text-decoration: none;
+}
+
+.container {
+  margin: auto;
+  text-align: center;
+}
+
+/*Paginas*/
+/* Productos */
+.h1-productos {
+  text-align: center;
+  margin: 30px 0 20px 0;
+  font-family: $Playfair;
+  padding-top: 60px;
+}
+.body-productos {
+  max-width: 100%;
+  width: 87%;
+  margin: auto;
+  text-align: center;
+} 
+.productos {
+  border: $borde_prod;
+  border-radius: 25px;
+  background-color: $blanco;
+  color: $negro;
+  max-width: 100%;
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  margin-bottom: 40px;
+  padding: 22px 25px;   
+}
+.cont-productos {
+  border: $borde_img_prod;
+  border-radius: 30px;
+}
+.productos img {
+  border-radius: 25px;
+  max-width: 100%;
+  width: 100%;
+} 
+.productos h3 {
+  margin-bottom: 4px;
+  font-size: 16px;
+  font-family: $Bona;
+  font-weight: bold;
+} 
+.productos p {
+  font-weight: bold;
+  font-size: 17px;
+  margin-top: 3px;
+} 
+.productos button {
+  font-family: $Bona;
+  font-size: 17px;
+  display: block;
+  margin: 7px auto 8px auto;
+  padding: 9px 12px;
+  background-color: $negro;
+  color: $blanco;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+}
+.productos button:hover {
+  background-color: $hover_botones;
+  transform: translate(7px, 0);
+} 
+
+/* Vinos */
+.h1-vinos {
+  text-align: center;
+  margin: 30px 0 20px 0;
+  font-family: $Playfair;
+  padding-top: 60px;
+}
+.body-vinos {
+  max-width: 100%;
+  width: 87%;
+  margin: auto;
+  text-align: center;
+} 
+.vinos {
+  border: $borde_prod;
+  border-radius: 25px;
+  background-color: $blanco;
+  color: $negro;
+  max-width: 100%;
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  margin-bottom: 40px;
+  padding: 22px 25px;   
+}
+.cont-vinos {
+  border: $borde_img_prod;
+  border-radius: 30px;
+}
+.vinos img {
+  border-radius: 25px;
+  max-width: 100%;
+  width: 100%;
+} 
+.vinos h3 {
+  margin-bottom: 4px;
+  font-size: 16px;
+  font-family: $Bona;
+  font-weight: bold;
+} 
+.vinos p {
+  font-weight: bold;
+  font-size: 17px;
+  margin-top: 3px;
+} 
+.vinos button {
+  font-family: $Bona;
+  font-size: 17px;
+  display: block;
+  margin: 7px auto 8px auto;
+  padding: 9px 12px;
+  background-color: $negro;
+  color: $blanco;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+}
+.vinos button:hover {
+  background-color: $hover_botones;
+  transform: translate(7px, 0);
+} 
+
+/* Espumantes */
+.h1-espumantes {
+  text-align: center;
+  margin: 30px 0 20px 0;
+  font-family: $Playfair;
+  padding-top: 60px;
+}
+.body-espumantes {
+  max-width: 100%;
+  width: 87%;
+  margin: auto;
+  text-align: center;
+} 
+.espumantes {
+  border: $borde_prod;
+  border-radius: 25px;
+  background-color: $blanco;
+  color: $negro;
+  max-width: 100%;
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  margin-bottom: 40px;
+  padding: 22px 25px;   
+}
+.cont-espumantes {
+  border: $borde_img_prod;
+  border-radius: 30px;
+} 
+.espumantes img {
+border-radius: 25px;
+max-width: 100%;
+width: 100%;
+}
+.espumantes h3 {
+  margin-bottom: 4px;
+  font-size: 16px;
+  font-family: $Bona;
+  font-weight: bold;
+} 
+.espumantes p {
+  font-weight: bold;
+  font-size: 17px;
+  margin-top: 3px;
+} 
+.espumantes button {
+  font-family: $Bona;
+  font-size: 17px;
+  display: block;
+  margin: 7px auto 8px auto;
+  padding: 9px 12px;
+  background-color: $negro;
+  color: $blanco;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+}
+.espumantes button:hover {
+  background-color: $hover_botones;
+  transform: translate(7px, 0);
+} 
+
+
+/* aceites */
+.h1-aceites {
+  text-align: center;
+  margin: 30px 0 20px 0;
+  font-family: $Playfair;
+  padding-top: 60px;
+}
+.body-aceites {
+  max-width: 100%;
+  width: 87%;
+  margin: auto;
+  text-align: center;
+}   
+.aceites {
+  border: $borde_prod;
+  border-radius: 25px;
+  background-color: $blanco;
+  color: $negro;
+  max-width: 100%;
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  margin-bottom: 40px;
+  padding: 22px 25px;   
+}
+.cont-aceites {
+  border: $borde_img_prod;
+  border-radius: 30px;
+}  
+.aceites img {
+  border-radius: 25px;
+  max-width: 100%;
+  width: 100%;
+} 
+.aceites h3 {
+  margin-bottom: 4px;
+  font-size: 16px;
+  font-family: $Bona;
+  font-weight: bold;
+} 
+.aceites p {
+  font-weight: bold;
+  font-size: 17px;
+  margin-top: 3px;
+} 
+.aceites button {
+  font-family: $Bona;
+  font-size: 17px;
+  display: block;
+  margin: 7px auto 8px auto;
+  padding: 9px 12px;
+  background-color: $negro;
+  color: $blanco;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+}
+.aceites button:hover {
+  background-color: $hover_botones;
+  transform: translate(7px, 0);
+} 
+
+
+/* whiskys */
+.h1-whiskys {
+  text-align: center;
+  margin: 30px 0 20px 0;
+  font-family: $Playfair;
+  padding-top: 60px;
+}
+.body-whiskys {
+  max-width: 100%;
+  width: 87%;
+  margin: auto;
+  text-align: center;
+}   
+.whiskys {
+  border: $borde_prod;
+  border-radius: 25px;
+  background-color: $blanco;
+  color: $negro;
+  max-width: 100%;
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  margin-bottom: 40px;
+  padding: 22px 25px;   
+}
+.cont-whiskys {
+  border: $borde_img_prod;
+  border-radius: 30px;
+}  
+.whiskys img {
+  border-radius: 25px;
+  max-width: 100%;
+  width: 100%;
+} 
+.whiskys h3 {
+  margin-bottom: 4px;
+  font-size: 16px;
+  font-family: $Bona;
+  font-weight: bold;
+} 
+.whiskys p {
+  font-weight: bold;
+  font-size: 17px;
+  margin-top: 3px;
+} 
+.whiskys button {
+  font-family: $Bona;
+  font-size: 17px;
+  display: block;
+  margin: 7px auto 8px auto;
+  padding: 9px 12px;
+  background-color: $negro;
+  color: $blanco;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+}
+.whiskys button:hover {
+  background-color: $hover_botones;
+  transform: translate(7px, 0);
+} 
+// Páginas aceites
+// .num-paginas button a {
+//   justify-content: space-between;
+// }

@@ -1,0 +1,218 @@
+/* Header */
+.header {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+    margin: 10px 0 10px 0;
+  }
+  .header button {
+    font-family: $Bona;
+    display: block;
+    border-radius: 12px;
+    border: none;
+    padding: 15px 10px;
+    background: $negro;
+    color: $blanco;
+    font-size: 17px;
+    cursor: pointer;
+    margin-top: 35px;
+  }
+  .header button:hover {
+    background-color: $hover_botones;
+    transform: translate(7px, 0);
+  }
+  
+  /* Promos */
+  .h1-promos {
+    font-family: $Playfair;
+    margin-bottom: 17px;
+    padding-top: 40px;
+  }
+  .prod-inicio {
+    background-color: $blanco;
+    color: $negro;
+    border: $borde_prod;
+    border-radius: 15px;
+    max-width: 100%;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    margin-bottom: 40px;
+    padding: 15px 18px 10px 18px;
+  }
+  .prod-inicio img {
+    border: $borde_img_prod;
+    border-radius: 35px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .prod-inicio h3 {
+    margin-bottom: 4px;
+    font-size: 19px;
+    font-family: $Bona;
+    font-weight: bold;
+  }
+  .prod-inicio p {
+    font-weight: bold;
+  }
+  .prod-inicio button {
+    font-family: $Bona;
+    font-size: 17px;
+    display: block;
+    margin: 15px auto 0px auto;
+    padding: 10px 13px;
+    background-color: $negro;
+    color: $blanco;
+    border-radius: 9px;
+    border: none;
+    cursor: pointer;
+  }
+  .prod-inicio button:hover {
+    background-color: $hover_botones;
+    transform: translate(7px, 0);
+  }  
+  
+  /* Destacados */
+  .h1-destacados { 
+    padding: 30px 0 10px 0;
+    margin-bottom: 17px;
+    font-family: $Playfair;
+  }
+  .destacados {
+    background-color: $blanco;
+    color: $negro;
+    border: $borde_prod;
+    border-radius: 15px;
+    max-width: 100%;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    margin-bottom: 40px;
+    padding: 15px 18px 10px 18px;
+  }
+  .destacados img {
+    border: $borde_img_prod;
+    border-radius: 35px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .destacados h3 {
+    margin-bottom: 4px;
+    font-size: 19px;
+    font-family: $Bona;
+    font-weight: bold;
+  }
+  .destacados p {
+    font-weight: bold;
+  }
+  .destacados button {
+    font-family: $Bona;
+    font-size: 17px;
+    display: block;
+    margin: 15px auto 0px auto;
+    padding: 10px 13px;
+    background-color: $negro;
+    color: $blanco;
+    border-radius: 9px;
+    border: none;
+    cursor: pointer;
+  }
+  .destacados button:hover {
+    background-color: $hover_botones;
+    transform: translate(7px, 0);
+  }
+
+@media only screen and (max-width: 768px) {
+    /*Header*/
+.header {
+    height: auto;
+    padding-bottom: 30px;
+    margin-bottom: 0;
+    max-width: 100%;
+   }
+   .header img {
+    width: 100%;
+    max-width: 100%;
+   }
+   .header button {
+    margin-top: 26px;
+    font-size: 14px;
+   }
+   .header button:hover {
+     background-color: $hover_botones;
+     transform: translate(4px, 0);
+   }
+       
+   /*Promos*/
+   .h1-promos {
+    font-size: 14px;
+    margin: 10px 0 15px 0;
+   }
+   .prod-inicio {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    width: 97%;
+   }
+   .prod-inicio img {
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+   }
+   .prod-inicio h3 {
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: bold;
+   }
+   .prod-inicio button {
+    margin: 10px auto 0;
+    padding: 8px 8px;
+    font-size: 14px;
+   }
+   .prod-inicio button:hover {
+    background-color: $hover_botones;
+    transform: translate(4px, 0);
+   }
+   
+   /*Destacados*/
+   .h1-destacados {
+    font-size: 14px;
+    margin: 10px 0 15px 0;
+   }
+       
+   .destacados {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    width: 97%;
+   }
+       
+   .destacados img {
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+   }
+       
+   .destacados h3 {
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: bold;
+   }
+       
+   .destacados button {
+    margin: 10px auto 0;
+    padding: 8px 8px;
+    font-size: 14px;
+   }
+   .destacados button:hover {
+     background-color: $hover_botones;
+     transform: translate(4px, 0);
+    }
+}

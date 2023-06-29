@@ -1,0 +1,52 @@
+.h1 {
+    padding-left: 25px;
+    font-size: 23px;
+    font-family: $Playfair;
+  }
+  ul {
+    list-style: none;
+  }
+  .main-nav {
+    border-bottom: $gris_bordes;
+    background-color: $negro;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+  }
+  .main-nav ul {
+    display: flex;
+    margin-right: 15px;
+  }
+  .main-nav ul li {
+    padding: 0 4px;
+  }
+  .main-nav ul li a {
+    padding: 5px 5px;
+  }
+  .main-nav ul li a:hover {
+    border-bottom: 2px solid $blanco;
+  }
+  .main-nav ul.main-menu {
+    font-family: $Bona;
+    font-size:  16px;
+  }
+
+
+@media only screen and (max-width: 768px) {
+
+.main-nav h1 {
+  font-size: 10px;
+ }
+ .main-nav {
+  display: flex;
+  height: 50px;
+ }
+ .main-nav ul li a {
+  font-size: 9px;
+  flex-grow: 1;
+ }
+ .main-nav ul li a:hover {
+   border-bottom: 1px solid $blanco;
+ }
+}
